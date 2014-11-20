@@ -9,7 +9,8 @@ function init() {
         });
     
     var myPlacemark = new ymaps.Placemark([48.476443, 135.058188], {
-            hintContent: 'Хабаровск Сити'
+            hintContent: 'Хабаровск Сити',
+            balloonContent: 'г. Хабаровск ул.<br>Ленина<br>тел. +7(030)2324-423-14'
         }, {
             iconLayout: 'default#image',
             iconImageHref: 'img/main-mark.png',
@@ -77,10 +78,12 @@ function init() {
         }
     }
 
+    // myCollectionArray.get($(this).attr('id')).balloon.open();
+    // return false;
+
     function createSubMenu (item, collection, submenu) {
         var submenuItem = $('<li><a href="#">' + item.name + '</a></li>'),
-            placemark = new ymaps.Placemark(item.center, { hintContent: item.name });
-
+            placemark = new ymaps.Placemark(item.center, { hintContent: item.name, balloonContent: item.content, });
         collection.add(placemark);
         submenuItem
             .appendTo(submenu)
