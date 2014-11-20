@@ -1,10 +1,12 @@
 var groups = [
     {
         name: "Культура",
+        open: true,
         ico: "ico1",
         items: [
             {
                 name: "Достопримечательности",
+                open: true,
                 img: "img/mark-1.png",
                 style: "default#image",
                 items: [
@@ -22,6 +24,7 @@ var groups = [
             },
             {
                 name: "Музеи",
+                open: true,
                 img: "img/mark-1.png",
                 style: "default#image",
                 items: [
@@ -39,6 +42,7 @@ var groups = [
             },
             {
                 name: "Театры",
+                open: true,
                 img: "img/mark-1.png",
                 style: "default#image",
                 items: [
@@ -56,6 +60,7 @@ var groups = [
             },
             {
                 name: "Библиотеки",
+                open: true,
                 img: "img/mark-1.png",
                 style: "default#image",
                 items: [
