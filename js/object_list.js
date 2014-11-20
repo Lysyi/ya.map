@@ -57,7 +57,6 @@ function init() {
             }),
             secondSubmenu = $('<ul class="map-second-submenu" style="display:none;"></ul>');
 
-        // Добавляем коллекцию на карту.
         //myMap.geoObjects.add(collection);
 
         menuItem
@@ -94,7 +93,6 @@ function init() {
     }
 
     mapMenu.appendTo($('.left-side'));
-
-    myMap.setBounds(myMap.geoObjects.getBounds());
+    // myMap.setBounds(myMap.geoObjects.getBounds());
     myMap.geoObjects.add(myPlacemark);
 }
