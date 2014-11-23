@@ -142,7 +142,6 @@ textarea {
     text-decoration: none;
 }
 
- 
 .group-name {
     padding: 13px 0 0 32px;
     text-transform: uppercase;
@@ -157,14 +156,15 @@ textarea {
 }
 
 .map-submenu a {
+    display: inline-block;
     padding: 0 0 0 16px;
     background: url(../img/chek-ico.png);
-    background-position: 0 -15px;
+    background-position: 0 -13px;
     background-repeat: no-repeat;
 }
 
-.map-submenu .active a, a:hover{
-    background-position: 0 0;
+.map-submenu .active a {
+    background-position: 0 2px;
     color: #fff;    
 }
 
